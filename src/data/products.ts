@@ -1,0 +1,372 @@
+import { Product } from '../types';
+
+export const PRODUCTS: Product[] = [
+  // Soft Drinks
+  {
+    id: 'sd-01',
+    name: 'Coca-Cola PET',
+    category: 'soft-drinks',
+    packSize: '50cl x 12 bottles',
+    wholesalePrice: 4200,
+    rrpPrice: 4800,
+    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=600',
+    badge: 'Fast Seller',
+    minOrder: 1,
+    description: 'Refreshing classic Coca-Cola in 50cl PET bottles. Ideal for restaurants, events, and provisioning stores.',
+    unitWeight: '6.5 kg',
+    inStock: true,
+    tierDiscounts: [{ minQty: 5, discountPercent: 3 }, { minQty: 10, discountPercent: 5 }]
+  },
+  {
+    id: 'sd-02',
+    name: 'Fanta Orange PET',
+    category: 'soft-drinks',
+    packSize: '50cl x 12 bottles',
+    wholesalePrice: 4100,
+    rrpPrice: 4800,
+    image: 'https://images.unsplash.com/photo-1624517452488-04869289c4ca?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Fruity and bubbly orange soda in 50cl PET pack.',
+    unitWeight: '6.5 kg',
+    inStock: true,
+    tierDiscounts: [{ minQty: 5, discountPercent: 3 }]
+  },
+  {
+    id: 'sd-03',
+    name: 'Sprite PET',
+    category: 'soft-drinks',
+    packSize: '50cl x 12 bottles',
+    wholesalePrice: 4100,
+    rrpPrice: 4800,
+    image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Crisp lemon-lime soda pack. High margin product for stores and restaurants.',
+    unitWeight: '6.5 kg',
+    inStock: true
+  },
+  {
+    id: 'sd-04',
+    name: 'Pepsi Cola',
+    category: 'soft-drinks',
+    packSize: '50cl x 12 bottles',
+    wholesalePrice: 3800,
+    rrpPrice: 4400,
+    image: 'https://images.unsplash.com/photo-1553456558-aff63285bdd1?auto=format&fit=crop&q=80&w=600',
+    badge: 'Popular Value',
+    minOrder: 1,
+    description: 'Popular cola refreshment in 50cl PET 12-pack.',
+    unitWeight: '6.5 kg',
+    inStock: true
+  },
+  {
+    id: 'sd-05',
+    name: 'Bigi Cola',
+    category: 'soft-drinks',
+    packSize: '60cl x 12 bottles',
+    wholesalePrice: 3600,
+    rrpPrice: 4200,
+    image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=600',
+    badge: 'High Volume',
+    minOrder: 1,
+    description: 'Extra size 60cl Bigi Cola pack. Top seller across Ilorin markets.',
+    unitWeight: '7.8 kg',
+    inStock: true
+  },
+
+  // Bottled Water
+  {
+    id: 'bw-01',
+    name: 'Eva Premium Bottled Water',
+    category: 'bottled-water',
+    packSize: '75cl x 12 bottles',
+    wholesalePrice: 2200,
+    rrpPrice: 2600,
+    image: 'https://images.unsplash.com/photo-1560023907-5f339617ea30?auto=format&fit=crop&q=80&w=600',
+    badge: 'Best Wholesale Price',
+    minOrder: 1,
+    description: 'Purified and mineralized premium drinking water. Essential for events, offices, and hotels.',
+    unitWeight: '9 kg',
+    inStock: true,
+    tierDiscounts: [{ minQty: 10, discountPercent: 5 }]
+  },
+  {
+    id: 'bw-02',
+    name: 'Aquafina Drinking Water',
+    category: 'bottled-water',
+    packSize: '75cl x 12 bottles',
+    wholesalePrice: 2100,
+    rrpPrice: 2500,
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Pure water in 75cl PET bottles, 12 per pack.',
+    unitWeight: '9 kg',
+    inStock: true
+  },
+  {
+    id: 'bw-03',
+    name: 'Nestlé Pure Life Water',
+    category: 'bottled-water',
+    packSize: '60cl x 12 bottles',
+    wholesalePrice: 2300,
+    rrpPrice: 2700,
+    image: 'https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'High standard mineral water 12-pack for discerning clients.',
+    unitWeight: '7.5 kg',
+    inStock: true
+  },
+
+  // Malt Drinks
+  {
+    id: 'md-01',
+    name: 'Maltina Can',
+    category: 'malt-drinks',
+    packSize: '33cl x 24 cans',
+    wholesalePrice: 11800,
+    rrpPrice: 13200,
+    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&q=80&w=600',
+    badge: 'Event Favorite',
+    minOrder: 1,
+    description: 'Nourishing multi-vitamin malt drink in 33cl cans. Case of 24.',
+    unitWeight: '8.2 kg',
+    inStock: true
+  },
+  {
+    id: 'md-02',
+    name: 'Amstel Malta Can',
+    category: 'malt-drinks',
+    packSize: '33cl x 24 cans',
+    wholesalePrice: 12200,
+    rrpPrice: 13800,
+    image: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Low sugar premium malt beverage pack of 24 cans.',
+    unitWeight: '8.2 kg',
+    inStock: true
+  },
+  {
+    id: 'md-03',
+    name: 'Malta Guinness PET',
+    category: 'malt-drinks',
+    packSize: '33cl x 12 bottles',
+    wholesalePrice: 6100,
+    rrpPrice: 6800,
+    image: 'https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Rich and satisfying malt drink pack of 12 bottles.',
+    unitWeight: '4.2 kg',
+    inStock: true
+  },
+
+  // Energy Drinks
+  {
+    id: 'ed-01',
+    name: 'Fearless Energy Drink (Red Berry)',
+    category: 'energy-drinks',
+    packSize: '50cl x 12 bottles',
+    wholesalePrice: 4800,
+    rrpPrice: 5500,
+    image: 'https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&q=80&w=600',
+    badge: 'Top Seller',
+    minOrder: 1,
+    description: 'Energizing red berry flavor in 50cl PET pack of 12. Extremely popular in Kwara state.',
+    unitWeight: '6.5 kg',
+    inStock: true
+  },
+  {
+    id: 'ed-02',
+    name: 'Climax Herbal Energy Drink',
+    category: 'energy-drinks',
+    packSize: '33cl x 24 cans',
+    wholesalePrice: 11500,
+    rrpPrice: 12900,
+    image: 'https://images.unsplash.com/photo-1570831739435-660143a58dfe?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Premium herbal energy boost in 24-can tray.',
+    unitWeight: '8.5 kg',
+    inStock: true
+  },
+
+  // Juices
+  {
+    id: 'jc-01',
+    name: 'Chivita 100% Real Orange Juice',
+    category: 'juices',
+    packSize: '1L x 10 packs',
+    wholesalePrice: 12500,
+    rrpPrice: 14000,
+    image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=80&w=600',
+    badge: 'Hotel Preferred',
+    minOrder: 1,
+    description: 'No added sugar pure orange juice, 1 Litre carton of 10. Perfect for hotel breakfasts.',
+    unitWeight: '10.5 kg',
+    inStock: true
+  },
+  {
+    id: 'jc-02',
+    name: '5Alive Pulpy Orange',
+    category: 'juices',
+    packSize: '85cl x 12 bottles',
+    wholesalePrice: 9200,
+    rrpPrice: 10400,
+    image: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Refreshing fruit drink with real pulp bits. Pack of 12.',
+    unitWeight: '10.8 kg',
+    inStock: true
+  },
+
+  // Beverages
+  {
+    id: 'bv-01',
+    name: 'Nestlé Milo Chocolate Drink Refill',
+    category: 'beverages',
+    packSize: '800g x 6 packs',
+    wholesalePrice: 18500,
+    rrpPrice: 20400,
+    image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=600',
+    badge: 'Household Essential',
+    minOrder: 1,
+    description: 'Energy food drink powder. 800g refill pouch carton of 6.',
+    unitWeight: '4.8 kg',
+    inStock: true
+  },
+  {
+    id: 'bv-02',
+    name: 'Peak Full Cream Milk Powder Tin',
+    category: 'beverages',
+    packSize: '400g x 12 tins',
+    wholesalePrice: 28400,
+    rrpPrice: 31000,
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Rich creamy milk powder in tins. Carton of 12 tins.',
+    unitWeight: '5.2 kg',
+    inStock: true
+  },
+
+  // Rice & Staples
+  {
+    id: 'rs-01',
+    name: 'Mama Gold Premium Parboiled Rice',
+    category: 'rice-staples',
+    packSize: '50kg Bag',
+    wholesalePrice: 78000,
+    rrpPrice: 84000,
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=600',
+    badge: 'Direct Mill Supply',
+    minOrder: 1,
+    description: 'Long grain stone-free Nigerian parboiled rice. Preferred by Ilorin caterers and households.',
+    unitWeight: '50 kg',
+    inStock: true,
+    tierDiscounts: [{ minQty: 3, discountPercent: 2 }, { minQty: 5, discountPercent: 4 }]
+  },
+  {
+    id: 'rs-02',
+    name: 'Mama Gold Rice (Medium Pack)',
+    category: 'rice-staples',
+    packSize: '10kg Bag',
+    wholesalePrice: 16500,
+    rrpPrice: 18200,
+    image: 'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&q=80&w=600',
+    badge: 'Fast Delivery',
+    minOrder: 1,
+    description: 'Convenient 10kg pack of premium parboiled rice.',
+    unitWeight: '10 kg',
+    inStock: true
+  },
+  {
+    id: 'rs-03',
+    name: 'Golden Penny Semovita',
+    category: 'rice-staples',
+    packSize: '5kg x 4 packs (20kg total)',
+    wholesalePrice: 24500,
+    rrpPrice: 27000,
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=600',
+    badge: 'Staple Winner',
+    minOrder: 1,
+    description: 'Vitamin enriched wheat flour semovita. Master carton of 4 x 5kg bags.',
+    unitWeight: '20 kg',
+    inStock: true
+  },
+  {
+    id: 'rs-04',
+    name: 'Dangote Refined White Sugar',
+    category: 'rice-staples',
+    packSize: '50kg Bag',
+    wholesalePrice: 74000,
+    rrpPrice: 79000,
+    image: 'https://images.unsplash.com/photo-1622484210800-8851457145e4?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Pure fortifed white sugar bag for bakeries, food vendors and retail stores.',
+    unitWeight: '50 kg',
+    inStock: true
+  },
+  {
+    id: 'rs-05',
+    name: 'Kings Pure Vegetable Cooking Oil',
+    category: 'rice-staples',
+    packSize: '5 Litres Jerrycan',
+    wholesalePrice: 14200,
+    rrpPrice: 15800,
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Cholesterol-free refined vegetable oil for healthy cooking.',
+    unitWeight: '4.6 kg',
+    inStock: true
+  },
+
+  // Household Essentials
+  {
+    id: 'he-01',
+    name: 'Viva Multi-Action Detergent Powder',
+    category: 'household',
+    packSize: '900g x 12 packs',
+    wholesalePrice: 13500,
+    rrpPrice: 15200,
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+    badge: 'Bulk Discount',
+    minOrder: 1,
+    description: 'High lather washing powder. Master carton of 12 x 900g packs.',
+    unitWeight: '11 kg',
+    inStock: true
+  },
+  {
+    id: 'he-02',
+    name: 'Hypo Multi-Surface Bleach',
+    category: 'household',
+    packSize: '1L x 12 bottles',
+    wholesalePrice: 9800,
+    rrpPrice: 11200,
+    image: 'https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Disinfectant bleach for sanitizing floors, linens, and surfaces. Case of 12.',
+    unitWeight: '12.5 kg',
+    inStock: true
+  },
+  {
+    id: 'he-03',
+    name: 'Dettol Original Antiseptic Soap',
+    category: 'household',
+    packSize: '120g x 24 bars',
+    wholesalePrice: 14400,
+    rrpPrice: 16500,
+    image: 'https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&q=80&w=600',
+    minOrder: 1,
+    description: 'Germ protection bathing soap case of 24 bars.',
+    unitWeight: '3 kg',
+    inStock: true
+  }
+];
+
+export const CATEGORIES = [
+  { id: 'all', name: 'All Products', icon: 'Grid', count: PRODUCTS.length },
+  { id: 'soft-drinks', name: 'Soft Drinks', icon: 'Wine', count: PRODUCTS.filter(p => p.category === 'soft-drinks').length },
+  { id: 'bottled-water', name: 'Bottled Water', icon: 'Droplets', count: PRODUCTS.filter(p => p.category === 'bottled-water').length },
+  { id: 'malt-drinks', name: 'Malt Drinks', icon: 'Beer', count: PRODUCTS.filter(p => p.category === 'malt-drinks').length },
+  { id: 'energy-drinks', name: 'Energy Drinks', icon: 'Zap', count: PRODUCTS.filter(p => p.category === 'energy-drinks').length },
+  { id: 'juices', name: 'Juices', icon: 'CupSoda', count: PRODUCTS.filter(p => p.category === 'juices').length },
+  { id: 'beverages', name: 'Beverages', icon: 'Coffee', count: PRODUCTS.filter(p => p.category === 'beverages').length },
+  { id: 'rice-staples', name: 'Rice & Staples', icon: 'Wheat', count: PRODUCTS.filter(p => p.category === 'rice-staples').length },
+  { id: 'household', name: 'Household Essentials', icon: 'Sparkles', count: PRODUCTS.filter(p => p.category === 'household').length },
+];

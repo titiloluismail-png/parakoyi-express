@@ -1,0 +1,6 @@
+{
+  "name": "Parakoyi Express",
+  "description": "Wholesale-priced drinks & household essentials delivered across Ilorin with fast same-day delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
